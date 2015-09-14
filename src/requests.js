@@ -91,7 +91,8 @@
                     this.loadingBay.removeChild(img);
                     this.openRequestCount--;
                     /* console.log(this.openRequestCount + " open requests"); */
-                    img.src = img.coord = img.onload = img.onerror = null;
+                    img.src = '';
+                    img.coord = img.onload = img.onerror = null;
                 }
             }
 
@@ -230,7 +231,7 @@
                             element: img,
                             url: ('' + img.src)
                         });
-                        img.src = null;
+                        img.src = '';
                     }
 
                     // keep going in the same order

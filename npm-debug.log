@@ -1,0 +1,597 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'dev' ]
+2 info using npm@2.12.1
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/hoefft/dev/git/modestmaps-js/package.json
+6 warn package.json modestmaps@3.3.6 'repositories' (plural) Not supported. Please pick one as the 'repository' field
+7 warn package.json modestmaps@3.3.6 No license field.
+8 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/package.json
+9 silly cache add args [ 'dev', null ]
+10 verbose cache add spec dev
+11 silly cache add parsed spec { raw: 'dev',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'dev',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 silly addNamed dev@*
+13 verbose addNamed "*" is a valid semver range for dev
+14 silly addNameRange { name: 'dev', range: '*', hasData: false }
+15 silly mapToRegistry name dev
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/dev
+19 verbose addNameRange registry:https://registry.npmjs.org/dev not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/dev
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 09:58:22
+23 verbose request id 9a881b5352244ac6
+24 http request GET https://registry.npmjs.org/dev
+25 http 200 https://registry.npmjs.org/dev
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"6FAQ717WLWEEHPRF40N2OPADI"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     'content-length': '8751',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Mon, 14 Sep 2015 07:54:29 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-fra1238-FRA',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1442217268.689940,VS0,VE701',
+26 silly get     vary: 'Accept' } ]
+27 verbose get saving dev to /Users/hoefft/.npm/registry.npmjs.org/dev/.cache.json
+28 silly addNameRange number 2 { name: 'dev', range: '*', hasData: true }
+29 silly addNameRange versions [ 'dev',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.1-d',
+29 silly addNameRange     '0.1.1-e',
+29 silly addNameRange     '0.1.1-f',
+29 silly addNameRange     '0.1.1-g',
+29 silly addNameRange     '0.1.1-h',
+29 silly addNameRange     '0.1.1-n',
+29 silly addNameRange     '0.1.1-p' ] ]
+30 silly addNamed dev@0.1.3
+31 verbose addNamed "0.1.3" is a plain semver version for dev
+32 silly mapToRegistry name dev
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/dev
+36 verbose addRemoteTarball https://registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/dev/-/dev-0.1.3.tgz',
+37 verbose addRemoteTarball   '89fdc08705e0e7eaef92d012e26751e4d744322a' ]
+38 info retry fetch attempt 1 at 09:58:23
+39 info attempt registry request try #1 at 09:58:23
+40 http fetch GET https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+41 http fetch 200 https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+42 silly fetchAndShaCheck shasum 89fdc08705e0e7eaef92d012e26751e4d744322a
+43 verbose addTmpTarball /var/folders/xb/2vpmzqt903d00lpnpr5yxdzw0000gn/T/npm-22217-ba37d721/registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for dev@0.1.3
+45 silly cache afterAdd dev@0.1.3
+46 verbose afterAdd /Users/hoefft/.npm/dev/0.1.3/package/package.json not in flight; writing
+47 verbose afterAdd /Users/hoefft/.npm/dev/0.1.3/package/package.json written
+48 silly install resolved [ { name: 'dev',
+48 silly install resolved     description: 'Reruns the given file whenever the current working dir subtree has modifications.',
+48 silly install resolved     version: '0.1.3',
+48 silly install resolved     repository: { type: 'git', url: 'git://github.com/iliakan/node-dev.git' },
+48 silly install resolved     author:
+48 silly install resolved      { name: 'Ilya Kantor',
+48 silly install resolved        email: 'iliakan@gmail.com',
+48 silly install resolved        url: 'http://javascript.info/' },
+48 silly install resolved     preferGlobal: true,
+48 silly install resolved     bin: { 'node-dev': './node-dev.sh' },
+48 silly install resolved     dependencies: { inotify: '>= 0.1.6' },
+48 silly install resolved     devDependencies: {},
+48 silly install resolved     _id: 'dev@0.1.3',
+48 silly install resolved     engines: { node: '*' },
+48 silly install resolved     _engineSupported: true,
+48 silly install resolved     _npmVersion: '1.0.6',
+48 silly install resolved     _nodeVersion: 'v0.5.0-pre',
+48 silly install resolved     _defaultsLoaded: true,
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: '89fdc08705e0e7eaef92d012e26751e4d744322a',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/dev/-/dev-0.1.3.tgz' },
+48 silly install resolved     scripts: {},
+48 silly install resolved     directories: {},
+48 silly install resolved     _shasum: '89fdc08705e0e7eaef92d012e26751e4d744322a',
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/dev/-/dev-0.1.3.tgz',
+48 silly install resolved     _from: 'dev@*' } ]
+49 info install dev@0.1.3 into /Users/hoefft/dev/git/modestmaps-js
+50 info installOne dev@0.1.3
+51 verbose installOne of dev to /Users/hoefft/dev/git/modestmaps-js not in flight; installing
+52 verbose lock using /Users/hoefft/.npm/_locks/dev-0b293fdcd2dc8811.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+53 silly install write writing dev 0.1.3 to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+54 verbose unbuild node_modules/dev
+55 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev is being purged from base /Users/hoefft/dev/git/modestmaps-js
+56 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+57 verbose tar unpack /Users/hoefft/.npm/dev/0.1.3/package.tgz
+58 verbose tar unpacking to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+59 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev is being purged
+60 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 silly gunzTarPerm extractEntry index.js
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm extractEntry readme.md
+65 silly gunzTarPerm extractEntry package.json
+66 silly gunzTarPerm extractEntry node-dev.sh
+67 silly gunzTarPerm extractEntry manager.js
+68 verbose write writing to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/package.json
+69 info preinstall dev@0.1.3
+70 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/package.json
+71 silly prepareForInstallMany adding inotify@>= 0.1.6 from dev dependencies
+72 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/package.json
+73 silly cache add args [ 'inotify@>= 0.1.6', null ]
+74 verbose cache add spec inotify@>= 0.1.6
+75 silly cache add parsed spec { raw: 'inotify@>= 0.1.6',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'inotify',
+75 silly cache add   rawSpec: '>= 0.1.6',
+75 silly cache add   spec: '>=0.1.6',
+75 silly cache add   type: 'range' }
+76 silly addNamed inotify@>=0.1.6
+77 verbose addNamed ">=0.1.6" is a valid semver range for inotify
+78 silly addNameRange { name: 'inotify', range: '>=0.1.6', hasData: false }
+79 silly mapToRegistry name inotify
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/inotify
+83 verbose addNameRange registry:https://registry.npmjs.org/inotify not in flight; fetching
+84 verbose request uri https://registry.npmjs.org/inotify
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 09:58:23
+87 http request GET https://registry.npmjs.org/inotify
+88 http 200 https://registry.npmjs.org/inotify
+89 silly get cb [ 200,
+89 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+89 silly get     etag: '"4ZY5A5WQTFKRIA2LNLBYWNNEV"',
+89 silly get     'content-type': 'application/json',
+89 silly get     'cache-control': 'max-age=60',
+89 silly get     'content-length': '26795',
+89 silly get     'accept-ranges': 'bytes',
+89 silly get     date: 'Mon, 14 Sep 2015 07:54:30 GMT',
+89 silly get     via: '1.1 varnish',
+89 silly get     age: '0',
+89 silly get     connection: 'keep-alive',
+89 silly get     'x-served-by': 'cache-fra1240-FRA',
+89 silly get     'x-cache': 'MISS',
+89 silly get     'x-cache-hits': '0',
+89 silly get     'x-timer': 'S1442217269.666472,VS0,VE415',
+89 silly get     vary: 'Accept' } ]
+90 verbose get saving inotify to /Users/hoefft/.npm/registry.npmjs.org/inotify/.cache.json
+91 silly addNameRange number 2 { name: 'inotify', range: '>=0.1.6', hasData: true }
+92 silly addNameRange versions [ 'inotify',
+92 silly addNameRange   [ '0.1.2',
+92 silly addNameRange     '0.1.3',
+92 silly addNameRange     '0.1.4',
+92 silly addNameRange     '0.1.5',
+92 silly addNameRange     '0.1.6',
+92 silly addNameRange     '0.1.7',
+92 silly addNameRange     '0.1.8',
+92 silly addNameRange     '0.2.0',
+92 silly addNameRange     '0.2.1',
+92 silly addNameRange     '0.2.2',
+92 silly addNameRange     '1.0.0',
+92 silly addNameRange     '1.1.0',
+92 silly addNameRange     '1.2.0',
+92 silly addNameRange     '1.2.1',
+92 silly addNameRange     '1.3.0',
+92 silly addNameRange     '1.4.0' ] ]
+93 silly addNamed inotify@1.4.0
+94 verbose addNamed "1.4.0" is a plain semver version for inotify
+95 silly mapToRegistry name inotify
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/inotify
+99 verbose addRemoteTarball https://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz not in flight; adding
+100 verbose addRemoteTarball [ 'https://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz',
+100 verbose addRemoteTarball   'c4a425d2035905a8da03f37426ff717160acdfee' ]
+101 info retry fetch attempt 1 at 09:58:24
+102 info attempt registry request try #1 at 09:58:24
+103 http fetch GET https://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz
+104 http fetch 200 https://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz
+105 silly fetchAndShaCheck shasum c4a425d2035905a8da03f37426ff717160acdfee
+106 verbose addTmpTarball /var/folders/xb/2vpmzqt903d00lpnpr5yxdzw0000gn/T/npm-22217-ba37d721/registry.npmjs.org/inotify/-/inotify-1.4.0.tgz not in flight; adding
+107 verbose addTmpTarball already have metadata; skipping unpack for inotify@1.4.0
+108 silly cache afterAdd inotify@1.4.0
+109 verbose afterAdd /Users/hoefft/.npm/inotify/1.4.0/package/package.json not in flight; writing
+110 verbose afterAdd /Users/hoefft/.npm/inotify/1.4.0/package/package.json written
+111 silly install resolved [ { name: 'inotify',
+111 silly install resolved     version: '1.4.0',
+111 silly install resolved     author: { name: 'Camilo Aguilar', email: 'camilo.aguilar@gmail.com' },
+111 silly install resolved     email: 'camilo.aguilar@gmail.com',
+111 silly install resolved     keywords:
+111 silly install resolved      [ 'inotify',
+111 silly install resolved        'watch',
+111 silly install resolved        'monitor',
+111 silly install resolved        'watch files',
+111 silly install resolved        'watch directories' ],
+111 silly install resolved     license: 'MIT',
+111 silly install resolved     description: 'inotify bindings for v8 javascript engine',
+111 silly install resolved     repository:
+111 silly install resolved      { type: 'git',
+111 silly install resolved        url: 'git+ssh://git@github.com/c4milo/node-inotify.git' },
+111 silly install resolved     engines: { node: '>=0.8' },
+111 silly install resolved     main: 'inotify',
+111 silly install resolved     dependencies: { nan: '^2.0.5' },
+111 silly install resolved     scripts:
+111 silly install resolved      { test: 'node-gyp configure build',
+111 silly install resolved        install: 'node-gyp rebuild' },
+111 silly install resolved     gypfile: true,
+111 silly install resolved     contributors:
+111 silly install resolved      [ [Object],
+111 silly install resolved        [Object],
+111 silly install resolved        [Object],
+111 silly install resolved        [Object],
+111 silly install resolved        [Object],
+111 silly install resolved        [Object],
+111 silly install resolved        [Object] ],
+111 silly install resolved     gitHead: '16e8944a62d1aa4315e9cbec377970f056aaab68',
+111 silly install resolved     bugs: { url: 'https://github.com/c4milo/node-inotify/issues' },
+111 silly install resolved     homepage: 'https://github.com/c4milo/node-inotify#readme',
+111 silly install resolved     _id: 'inotify@1.4.0',
+111 silly install resolved     _shasum: 'c4a425d2035905a8da03f37426ff717160acdfee',
+111 silly install resolved     _from: 'inotify@>=0.1.6',
+111 silly install resolved     _npmVersion: '2.12.1',
+111 silly install resolved     _nodeVersion: '0.12.7',
+111 silly install resolved     _npmUser: { name: 'c4milo', email: 'camilo.aguilar@gmail.com' },
+111 silly install resolved     maintainers: [ [Object], [Object] ],
+111 silly install resolved     dist:
+111 silly install resolved      { shasum: 'c4a425d2035905a8da03f37426ff717160acdfee',
+111 silly install resolved        tarball: 'http://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz' },
+111 silly install resolved     directories: {},
+111 silly install resolved     _resolved: 'https://registry.npmjs.org/inotify/-/inotify-1.4.0.tgz' } ]
+112 info install inotify@1.4.0 into /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+113 info installOne inotify@1.4.0
+114 verbose installOne of inotify to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev not in flight; installing
+115 verbose lock using /Users/hoefft/.npm/_locks/inotify-2a5eae817687bec0.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+116 silly install write writing inotify 1.4.0 to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+117 verbose unbuild node_modules/dev/node_modules/inotify
+118 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify is being purged from base /Users/hoefft/dev/git/modestmaps-js
+119 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+120 verbose tar unpack /Users/hoefft/.npm/inotify/1.4.0/package.tgz
+121 verbose tar unpacking to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+122 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify is being purged
+123 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+124 silly gunzTarPerm modes [ '755', '644' ]
+125 silly gunzTarPerm extractEntry package.json
+126 silly gunzTarPerm extractEntry .npmignore
+127 silly gunzTarPerm extractEntry README.md
+128 silly gunzTarPerm extractEntry LICENSE
+129 silly gunzTarPerm extractEntry example.js
+130 silly gunzTarPerm extractEntry inotify.js
+131 silly gunzTarPerm extractEntry binding.gyp
+132 silly gunzTarPerm extractEntry src/bindings.cc
+133 silly gunzTarPerm extractEntry src/bindings.h
+134 silly gunzTarPerm extractEntry src/node_inotify.cc
+135 silly gunzTarPerm extractEntry src/node_inotify.h
+136 silly gunzTarPerm extractEntry AUTHORS
+137 silly gunzTarPerm extractEntry .travis.yml
+138 silly gunzTarPerm extractEntry Vagrantfile
+139 verbose write writing to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/package.json
+140 info preinstall inotify@1.4.0
+141 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/package.json
+142 silly prepareForInstallMany adding nan@^2.0.5 from inotify dependencies
+143 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/package.json
+144 silly cache add args [ 'nan@^2.0.5', null ]
+145 verbose cache add spec nan@^2.0.5
+146 silly cache add parsed spec { raw: 'nan@^2.0.5',
+146 silly cache add   scope: null,
+146 silly cache add   name: 'nan',
+146 silly cache add   rawSpec: '^2.0.5',
+146 silly cache add   spec: '>=2.0.5 <3.0.0',
+146 silly cache add   type: 'range' }
+147 silly addNamed nan@>=2.0.5 <3.0.0
+148 verbose addNamed ">=2.0.5 <3.0.0" is a valid semver range for nan
+149 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
+150 silly mapToRegistry name nan
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/nan
+154 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+155 verbose request uri https://registry.npmjs.org/nan
+156 verbose request no auth needed
+157 info attempt registry request try #1 at 09:58:24
+158 verbose etag "1L4RU1AM541YSVP1YQFXG1Y1J"
+159 http request GET https://registry.npmjs.org/nan
+160 http 304 https://registry.npmjs.org/nan
+161 silly get cb [ 304,
+161 silly get   { date: 'Mon, 14 Sep 2015 07:54:30 GMT',
+161 silly get     via: '1.1 varnish',
+161 silly get     'cache-control': 'max-age=60',
+161 silly get     etag: '"1L4RU1AM541YSVP1YQFXG1Y1J"',
+161 silly get     age: '47',
+161 silly get     connection: 'keep-alive',
+161 silly get     'x-served-by': 'cache-fra1247-FRA',
+161 silly get     'x-cache': 'HIT',
+161 silly get     'x-cache-hits': '6',
+161 silly get     'x-timer': 'S1442217270.349093,VS0,VE0',
+161 silly get     vary: 'Accept' } ]
+162 verbose etag https://registry.npmjs.org/nan from cache
+163 verbose get saving nan to /Users/hoefft/.npm/registry.npmjs.org/nan/.cache.json
+164 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
+165 silly addNameRange versions [ 'nan',
+165 silly addNameRange   [ '0.3.0-wip',
+165 silly addNameRange     '0.3.0-wip2',
+165 silly addNameRange     '0.3.0',
+165 silly addNameRange     '0.3.1',
+165 silly addNameRange     '0.3.2',
+165 silly addNameRange     '0.4.0',
+165 silly addNameRange     '0.4.1',
+165 silly addNameRange     '0.4.2',
+165 silly addNameRange     '0.4.3',
+165 silly addNameRange     '0.4.4',
+165 silly addNameRange     '0.5.0',
+165 silly addNameRange     '0.5.1',
+165 silly addNameRange     '0.5.2',
+165 silly addNameRange     '0.6.0',
+165 silly addNameRange     '0.7.0',
+165 silly addNameRange     '0.7.1',
+165 silly addNameRange     '0.8.0',
+165 silly addNameRange     '1.0.0',
+165 silly addNameRange     '1.1.0',
+165 silly addNameRange     '1.1.1',
+165 silly addNameRange     '1.1.2',
+165 silly addNameRange     '1.2.0',
+165 silly addNameRange     '1.3.0',
+165 silly addNameRange     '1.4.0',
+165 silly addNameRange     '1.4.1',
+165 silly addNameRange     '1.5.0',
+165 silly addNameRange     '1.4.2',
+165 silly addNameRange     '1.4.3',
+165 silly addNameRange     '1.5.1',
+165 silly addNameRange     '1.5.2',
+165 silly addNameRange     '1.6.0',
+165 silly addNameRange     '1.5.3',
+165 silly addNameRange     '1.6.1',
+165 silly addNameRange     '1.6.2',
+165 silly addNameRange     '1.7.0',
+165 silly addNameRange     '1.8.0',
+165 silly addNameRange     '1.8.1',
+165 silly addNameRange     '1.8.2',
+165 silly addNameRange     '1.8.3',
+165 silly addNameRange     '1.8.4',
+165 silly addNameRange     '1.9.0',
+165 silly addNameRange     '2.0.0',
+165 silly addNameRange     '2.0.1',
+165 silly addNameRange     '2.0.2',
+165 silly addNameRange     '2.0.3',
+165 silly addNameRange     '2.0.4',
+165 silly addNameRange     '2.0.5',
+165 silly addNameRange     '2.0.6',
+165 silly addNameRange     '2.0.7',
+165 silly addNameRange     '2.0.8',
+165 silly addNameRange     '2.0.9' ] ]
+166 silly addNamed nan@2.0.9
+167 verbose addNamed "2.0.9" is a plain semver version for nan
+168 silly cache afterAdd nan@2.0.9
+169 verbose afterAdd /Users/hoefft/.npm/nan/2.0.9/package/package.json not in flight; writing
+170 verbose afterAdd /Users/hoefft/.npm/nan/2.0.9/package/package.json written
+171 silly install resolved [ { name: 'nan',
+171 silly install resolved     version: '2.0.9',
+171 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 4 compatibility',
+171 silly install resolved     main: 'include_dirs.js',
+171 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+171 silly install resolved     scripts:
+171 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+171 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
+171 silly install resolved        docs: 'doc/.build.sh' },
+171 silly install resolved     contributors:
+171 silly install resolved      [ [Object],
+171 silly install resolved        [Object],
+171 silly install resolved        [Object],
+171 silly install resolved        [Object],
+171 silly install resolved        [Object],
+171 silly install resolved        [Object],
+171 silly install resolved        [Object] ],
+171 silly install resolved     devDependencies:
+171 silly install resolved      { bindings: '~1.2.1',
+171 silly install resolved        commander: '^2.8.1',
+171 silly install resolved        glob: '^5.0.14',
+171 silly install resolved        'node-gyp': '~2.0.2',
+171 silly install resolved        pangyp: '~2.2.0',
+171 silly install resolved        tap: '~0.7.1',
+171 silly install resolved        xtend: '~4.0.0' },
+171 silly install resolved     license: 'MIT',
+171 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+171 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+171 silly install resolved     _id: 'nan@2.0.9',
+171 silly install resolved     _shasum: 'd02a770f46778842cceb94e17cab31ffc7234a05',
+171 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.9.tgz',
+171 silly install resolved     _from: 'nan@>=2.0.5 <3.0.0',
+171 silly install resolved     _npmVersion: '2.14.2',
+171 silly install resolved     _nodeVersion: '4.0.0',
+171 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+171 silly install resolved     maintainers: [ [Object], [Object] ],
+171 silly install resolved     dist:
+171 silly install resolved      { shasum: 'd02a770f46778842cceb94e17cab31ffc7234a05',
+171 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.0.9.tgz' },
+171 silly install resolved     directories: {},
+171 silly install resolved     readme: 'ERROR: No README data found!' } ]
+172 info install nan@2.0.9 into /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+173 info installOne nan@2.0.9
+174 verbose installOne of nan to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify not in flight; installing
+175 verbose lock using /Users/hoefft/.npm/_locks/nan-095cfa949bb9d9f9.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+176 silly install write writing nan 2.0.9 to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+177 verbose unbuild node_modules/dev/node_modules/inotify/node_modules/nan
+178 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan is being purged from base /Users/hoefft/dev/git/modestmaps-js
+179 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+180 verbose tar unpack /Users/hoefft/.npm/nan/2.0.9/package.tgz
+181 verbose tar unpacking to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+182 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan is being purged
+183 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+184 silly gunzTarPerm modes [ '755', '644' ]
+185 silly gunzTarPerm extractEntry package.json
+186 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+187 silly gunzTarPerm extractEntry README.md
+188 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+189 silly gunzTarPerm extractEntry include_dirs.js
+190 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+191 silly gunzTarPerm extractEntry nan_converters.h
+192 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+193 silly gunzTarPerm extractEntry LICENSE.md
+194 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+195 silly gunzTarPerm extractEntry .dntrc
+196 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+197 silly gunzTarPerm extractEntry appveyor.yml
+198 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+199 silly gunzTarPerm extractEntry doc/new.md
+200 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+201 silly gunzTarPerm extractEntry doc/.build.sh
+202 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+203 silly gunzTarPerm extractEntry doc/buffers.md
+204 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+205 silly gunzTarPerm extractEntry doc/callback.md
+206 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+207 silly gunzTarPerm extractEntry doc/converters.md
+208 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+209 silly gunzTarPerm extractEntry doc/errors.md
+210 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+211 silly gunzTarPerm extractEntry doc/maybe_types.md
+212 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+213 silly gunzTarPerm extractEntry doc/methods.md
+214 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+215 silly gunzTarPerm extractEntry doc/asyncworker.md
+216 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+217 silly gunzTarPerm extractEntry doc/node_misc.md
+218 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+219 silly gunzTarPerm extractEntry doc/persistent.md
+220 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+221 silly gunzTarPerm extractEntry doc/scopes.md
+222 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+223 silly gunzTarPerm extractEntry doc/script.md
+224 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+225 silly gunzTarPerm extractEntry doc/string_bytes.md
+226 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+227 silly gunzTarPerm extractEntry doc/v8_internals.md
+228 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+229 silly gunzTarPerm extractEntry doc/v8_misc.md
+230 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+231 silly gunzTarPerm extractEntry nan.h
+232 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+233 silly gunzTarPerm extractEntry nan_callbacks.h
+234 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+235 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+236 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+237 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+238 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+239 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+240 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+241 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+242 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+243 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+244 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+245 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+246 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+247 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+248 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+249 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+250 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+251 silly gunzTarPerm extractEntry nan_new.h
+252 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+253 silly gunzTarPerm extractEntry nan_object_wrap.h
+254 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+255 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+256 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+257 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+258 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+259 silly gunzTarPerm extractEntry nan_string_bytes.h
+260 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+261 silly gunzTarPerm extractEntry nan_weak.h
+262 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+263 silly gunzTarPerm extractEntry CHANGELOG.md
+264 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+265 silly gunzTarPerm extractEntry tools/package.json
+266 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+267 silly gunzTarPerm extractEntry tools/README.md
+268 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+269 silly gunzTarPerm extractEntry tools/1to2.js
+270 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+271 verbose write writing to /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan/package.json
+272 info preinstall nan@2.0.9
+273 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan/package.json
+274 verbose readDependencies loading dependencies from /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan/package.json
+275 silly install resolved []
+276 verbose about to build /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+277 info build /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+278 info linkStuff nan@2.0.9
+279 silly linkStuff nan@2.0.9 has /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules as its parent node_modules
+280 verbose linkBins nan@2.0.9
+281 verbose linkMans nan@2.0.9
+282 verbose rebuildBundles nan@2.0.9
+283 info install nan@2.0.9
+284 info postinstall nan@2.0.9
+285 verbose unlock done using /Users/hoefft/.npm/_locks/nan-095cfa949bb9d9f9.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify/node_modules/nan
+286 verbose about to build /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+287 info build /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+288 info linkStuff inotify@1.4.0
+289 silly linkStuff inotify@1.4.0 has /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules as its parent node_modules
+290 verbose linkBins inotify@1.4.0
+291 verbose linkMans inotify@1.4.0
+292 verbose rebuildBundles inotify@1.4.0
+293 verbose rebuildBundles [ 'nan' ]
+294 info install inotify@1.4.0
+295 verbose unsafe-perm in lifecycle true
+296 info inotify@1.4.0 Failed to exec install script
+297 verbose unlock done using /Users/hoefft/.npm/_locks/inotify-2a5eae817687bec0.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+298 verbose about to build /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+299 verbose unlock done using /Users/hoefft/.npm/_locks/dev-0b293fdcd2dc8811.lock for /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+300 verbose stack Error: inotify@1.4.0 install: `node-gyp rebuild`
+300 verbose stack Exit status 1
+300 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+300 verbose stack     at EventEmitter.emit (events.js:110:17)
+300 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+300 verbose stack     at ChildProcess.emit (events.js:110:17)
+300 verbose stack     at maybeClose (child_process.js:1015:16)
+300 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+301 verbose pkgid inotify@1.4.0
+302 verbose cwd /Users/hoefft/dev/git/modestmaps-js
+303 error Darwin 14.4.0
+304 error argv "node" "/usr/local/bin/npm" "install" "dev"
+305 error node v0.12.7
+306 error npm  v2.12.1
+307 error code ELIFECYCLE
+308 error inotify@1.4.0 install: `node-gyp rebuild`
+308 error Exit status 1
+309 error Failed at the inotify@1.4.0 install script 'node-gyp rebuild'.
+309 error This is most likely a problem with the inotify package,
+309 error not with npm itself.
+309 error Tell the author that this fails on your system:
+309 error     node-gyp rebuild
+309 error You can get their info via:
+309 error     npm owner ls inotify
+309 error There is likely additional logging output above.
+310 verbose exit [ 1, true ]
+311 verbose unbuild node_modules/dev/node_modules/inotify
+312 info preuninstall inotify@1.4.0
+313 info uninstall inotify@1.4.0
+314 verbose unbuild rmStuff inotify@1.4.0 from /Users/hoefft/dev/git/modestmaps-js/node_modules
+315 verbose unbuild rmStuff in /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules
+316 info postuninstall inotify@1.4.0
+317 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify is being purged from base /Users/hoefft/dev/git/modestmaps-js
+318 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+319 silly vacuum-fs purging /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules/inotify
+320 silly vacuum-fs removing /Users/hoefft/dev/git/modestmaps-js/node_modules/dev/node_modules
+321 silly vacuum-fs quitting because other entries in /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+322 verbose unbuild node_modules/dev
+323 info preuninstall dev@0.1.3
+324 info uninstall dev@0.1.3
+325 verbose unbuild rmStuff dev@0.1.3 from /Users/hoefft/dev/git/modestmaps-js/node_modules
+326 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/.bin/node-dev is being gently removed
+327 silly gentlyRm verifying /Users/hoefft/dev/git/modestmaps-js is an npm working directory
+328 silly gentlyRm containing path /Users/hoefft/dev/git/modestmaps-js is under npm's control, in /Users/hoefft/dev/git/modestmaps-js
+329 silly gentlyRm deletion target /Users/hoefft/dev/git/modestmaps-js/node_modules/.bin/node-dev is under /Users/hoefft/dev/git/modestmaps-js
+330 verbose gentlyRm vacuuming from /Users/hoefft/dev/git/modestmaps-js/node_modules/.bin/node-dev up to /Users/hoefft/dev/git/modestmaps-js
+331 info postuninstall dev@0.1.3
+332 silly gentlyRm /Users/hoefft/dev/git/modestmaps-js/node_modules/dev is being purged from base /Users/hoefft/dev/git/modestmaps-js
+333 verbose gentlyRm don't care about contents; nuking /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+334 silly vacuum-fs purging /Users/hoefft/dev/git/modestmaps-js/node_modules/dev
+335 silly vacuum-fs removing /Users/hoefft/dev/git/modestmaps-js/node_modules
+336 silly vacuum-fs finished vacuuming up to /Users/hoefft/dev/git/modestmaps-js
